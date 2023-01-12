@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: rgb(71, 68, 68);
+}
+
+.heading {
+    margin: 3rem auto;
+    text-align: center;
+    color: white;
+}
+
+.heading h2 {
+    font-size: 1rem;
+    animation: font infinite 1.5s;
+    height: 3rem;
+}
+
+@keyframes font {
+    0% {
+        font-size: 1rem;
+    }
+
+    50% {
+        font-size: 1.5rem;
+    }
+
+    100% {
+        font-size: 1rem;
+    }
+
+
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+
+
+}
+
+.card {
+    width: 30%;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem 0;
+    height: 15rem;
+    position: relative;
+    transition: all .5s ease-in;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    z-index: 3;
+}
+
+.count {
+    font-size: 3rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+.card-container h1 span {
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.card-container .card-name {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.card1 {
+    background: green;
+}
+
+.card2 {
+    background: goldenrod;
+}
+
+.card3 {
+    background: brown;
+}
+
+.card4 {
+    background: blueviolet;
+}
+
+.card5 {
+    background: yellowgreen;
+}
+
+.card6 {
+    background: purple;
+}
+
+@media(max-width:1070px) {
+    .card-container {
+        justify-content: space-around;
+
+    }
+
+    .card {
+        width: 40%;
+    }
+}
+
+@media(max-width:732px) {
+    .card-container {
+        display: block;
+              
+    }
+    .card{
+        margin: auto;
+        width: 60%;
+        margin-bottom: 1.5rem;
+    }
+
+}
+@media(max-width:481px){
+    .card{
+        
+        width: 100%;
+        
+    }
+}
+@media(max-width:481px){
+    .card-container .card-name{
+        font-size: 1.5rem;
+    }
+    .card-container .count{
+        font-size: 2rem;
+    }
+    .card{
+        height: 10rem;
+    }
+}
+@media(max-width:232px){
+    .card-container .card-name{
+        font-size: 1.2rem;
+    }
+    .card-container .count{
+        font-size: 1.6rem;
+    }
+    .card{
+        height: 9rem;
+    }
+    .card-container h1 span{
+        font-size: .8rem;
+    }
+}
